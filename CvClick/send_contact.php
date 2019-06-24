@@ -1,12 +1,10 @@
 <?php
 if(isset($_POST['email'])) {
  
-    // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "victor.sedaros@ynov.com";
     $email_subject = "Contact CVClick";
  
     function died($error) {
-        // your error code can go here
         echo "We are very sorry, but there were error(s) found with the form you submitted. ";
         echo "These errors appear below.<br /><br />";
         echo $error."<br /><br />";
@@ -15,7 +13,6 @@ if(isset($_POST['email'])) {
     }
  
  
-    // validation expected data exists
     if(!isset($_POST['first_name']) ||
         !isset($_POST['last_name']) ||
         !isset($_POST['email']) ||
